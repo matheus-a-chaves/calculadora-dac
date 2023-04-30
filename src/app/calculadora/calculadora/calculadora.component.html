@@ -1,0 +1,35 @@
+<div class="content">
+  <div class="result">
+    <p>{{resultado}}</p>
+  </div>
+  <div class="calculator-num-op">
+    <div class="otheroperators-number">
+      <div class="others-operators">
+        <div (click)="limpar()">AC</div>
+        <div (click)="concat('^')">^</div>
+        <div (click)="concat('%')">%</div>
+      </div>
+      <div class="number">
+        <div (click)="concat('7')">7</div>
+        <div (click)="concat('8')">8</div>
+        <div (click)="concat('9')">9</div>
+        <div (click)="concat('4')">4</div>
+        <div (click)="concat('5')">5</div>
+        <div (click)="concat('6')">6</div>
+        <div (click)="concat('1')">1</div>
+        <div (click)="concat('2')">2</div>
+        <div (click)="concat('3')">3</div>
+        <div class="item-0" (click)="concat('0')">0</div>
+
+        <div (click)="concat('.')">,</div>
+      </div>
+    </div>
+    <div class="operators">
+      <div (click)="concat('/')">/</div>
+      <div (click)="concat('*')">x</div>
+      <div (click)="concat('-')">-</div>
+      <div (click)="concat('+')">+</div>
+      <div (click)="calcular()">=</div>
+    </div>
+  </div>
+</div>
